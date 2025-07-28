@@ -1,41 +1,45 @@
 # Design-and-Deployment-of-an-AI-Powered-Predictive-System
 
 Develop and deploy machine learning or AI-based model for a real-world application. Preprocess data, build and evaluate a predictive model, and deploy the solution using Flask so that it can be accessed via a simple web interface.
-
 -------------------------------------------------------
-Date: 13/06/2025
+
+*Date:* 13/06/2025
 --------------------------------------------------------
+
 ## Project Summary 
 
 The project involves developing and deploying a machine learning model to predict heart disease based on clinical data. The solution includes data preprocessing, model development, and deployment using Flask for a user-friendly web interface.
+
 ---------------------------------------------------------
+
 ## Project Question 
 
 AI models can be developed by collecting relevant real-world data, preprocessing it to ensure quality, and training a machine learning algorithm to make predictions or classifications based on the data. Once trained, the model can be evaluated using standard performance metrics. To deploy the model in a real-world application, a web framework like Flask can be used to create a user-friendly interface where inputs are collected, passed to the model, and predictions are returned in real time. This approach enhances decision-making and task automation by enabling quick, data-driven responses.
+
 ---------------------------------------------------------
+
 ## Project Objectives:
+
 1. Explore and analyze the Heart Disease UCI dataset.
 2. Build and evaluate a supervised ML model.
 3. Develop a web interface using Flask.
 4. Deploy the model for real-time predictions.
+
 ----------------------------------------------------------
-## Dataset & Problem Definition
-Problem: Predict the presence of heart disease from clinical data
-Dataset: Heart Disease UCI [Link Text](https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci)
-Target Variable : num (presence of heart disease)
-Features: age, sex, chest pain type, resting blood pressure, cholesterol, etc.
-----------------------------------------------------------------------
+
 ## STEPS:
+
 ### Dataset & Problem Definition
-About Dataset
+
+*About Dataset*
 
 The World Health Organization has estimated 12 million deaths occur worldwide, every year due to heart diseases. Half the deaths in the United States and other developed countries are due to cardiovascular diseases. The early prognosis of cardiovascular diseases can aid in making decisions on lifestyle changes in high-risk patients and in turn reduce the complications. This research intends to pinpoint the most relevant/risk factors of heart disease as well as predict the overall risk using Random Forest Model.
 
-Meta-Data
+*Meta-Data*
 
 This is a multivariate type of dataset which means providing or involving a variety of separate mathematical or statistical variables, multivariate numerical data analysis. It is composed of 14 attributes which are age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise-induced angina, old-peak - ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment, number of major vessels and Thalassemia. This database includes 76 attributes, but all published studies relate to the use of a subset of 14 of them. The Cleveland database is the only one used by ML researchers to date. One of the major tasks on this dataset is to predict based on the given attributes of a patient whether that particular person has heart disease or not and another is the experimental task to diagnose and find out various insights from this dataset which could help in understanding the problem more.
 
-Column Descriptions:
+*Column Descriptions:*
 
 id (Unique id for each patient)
 age (Age of the patient in years)
@@ -55,25 +59,25 @@ ca: number of major vessels (0-3) colored by fluoroscopy
 thal: [normal; fixed defect; reversible defect]
 num: the predicted attribute
 
-Acknowledgements
+*Acknowledgements*
 
-Creators:
+*Creators:*
 
 Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
 University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
 University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
 V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
 
-Relevant Papers:
+*Relevant Papers:*
 
 Detrano, R., Janosi, A., Steinbrunn, W., Pfisterer, M., Schmid, J., Sandhu, S., Guppy, K., Lee, S., & Froelicher, V. (1989). International application of a new probability algorithm for the diagnosis of coronary artery disease. American Journal of Cardiology, 64,304--310.
 
-Web Link
+*Web Link*
 
 David W. Aha & Dennis Kibler. "Instance-based prediction of heart-disease presence with the Cleveland database." Web Link
 Gennari, J.H., Langley, P, & Fisher, D. (1989). Models of incremental concept formation. Artificial Intelligence, 40, 11--61. Web Link
 
-Citation Request:
+*Citation Request:*
 
 The authors of the databases have requested that any publications resulting from the use of the data include the names of the principal investigator responsible for the data collection at each institution. They would be:
 Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
@@ -81,61 +85,78 @@ University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
 University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
 V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
 
-Dataset Detailed Summary:
+*Dataset Detailed Summary:*
 
-Source: Heart Disease UCI dataset from Kaggle.
-Target Variable: num (presence of heart disease).
-Features: Age, sex, chest pain type, resting blood pressure, cholesterol, etc.
+*Source:* Heart Disease UCI dataset from Kaggle [Link Text (https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci)].
+*Target Variable:* num (presence of heart disease).
+*Features:* Age, sex, chest pain type, resting blood pressure, cholesterol, etc.
  
  ### 2. Data Preparation
+
 *Import all Necessary Libraries:*
+
 <img width="1099" height="467" alt="image" src="https://github.com/user-attachments/assets/d9df945e-c0e4-43d5-9fc9-a933c8c4d320" />
 
 -------------------------------------------------------------------------------------------------------------------
 *Data Collection from Kaggle:*
-Load the Dataset:
+
+*Load the Dataset:*
 <img width="1049" height="271" alt="image" src="https://github.com/user-attachments/assets/e312eefd-a2ac-436e-aea0-c022aab3d243" />
 
 --------------------------------------------------------------------------------------------------------------------------------------
-Descriptive Analysis:
+*Descriptive Analysis:*
+
 <img width="836" height="332" alt="image" src="https://github.com/user-attachments/assets/7e82610a-8ead-4abb-b9d2-df91ec3f8a3f" />
+
 *Observations:*
+
 There are no heart diseases found in the 25% of the patients with an average of age 47.0.
 There is mild presence of heart diseases found in the 50% of the patients with an average of age 54.0.
 There is moderate presence of heart diseases found in 75% of the patients with an average of age 60.0 or more.
 
 <img width="938" height="454" alt="image" src="https://github.com/user-attachments/assets/0ca97b1f-8f6f-401e-a7bf-cf19147bd2b0" />
+
 *Observations:*
+
 There are 920 rows, which means the data of 920 human beings.
 There are 16 columns in the dataset, including id, dataset (location of the patient).
 The target feature num represents the ordinal numeric severity of the heart disease ([0, 1, 2, 3, 4]).
 There are 13 features or medical parameters (excluding id and dataset), which will be used to predict the target feature num (the intensity of the heart disease).
 
 <img width="1048" height="250" alt="image" src="https://github.com/user-attachments/assets/767b5dde-2d8a-4e70-a258-0150694770c7" />
+
 *Observation:*
+
 Number of rows in the dataset:  920
 Number of columns in the dataset:  16
 
 <img width="889" height="84" alt="image" src="https://github.com/user-attachments/assets/e8ff4de6-0a9a-4278-a6dc-ea7271ea1359" />
-Observation:
+
+*Observation:*
 The columns in the Dataset:
 
 <img width="1053" height="355" alt="image" src="https://github.com/user-attachments/assets/ed36c2ad-96e6-4bc3-aaf2-494b96cfc2b7" />
 
 <img width="1012" height="116" alt="image" src="https://github.com/user-attachments/assets/65341964-4090-41f2-8480-8978610e0d7b" />
 <img width="1030" height="99" alt="image" src="https://github.com/user-attachments/assets/404e84db-44f9-42e4-80e8-bb0dd8fba6e2" />
- Observation:
+
+*Observation:*
 There is no duplicated entry in the Dataset
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 *Exploratory Data Analysis*
+
 *EDA of "Age" Column:*
 
 <img width="1042" height="93" alt="image" src="https://github.com/user-attachments/assets/d3025800-239f-4774-b6e6-4dec58e17650" />
 
 <img width="1033" height="223" alt="image" src="https://github.com/user-attachments/assets/b30128b6-47a8-4d9b-95d3-8bc72df2d76a" />
+
+
+<img width="1048" height="506" alt="image" src="https://github.com/user-attachments/assets/aebaf56b-ea4d-4742-a39a-7571ebfb11b5" />
+
 
 
 
