@@ -52,7 +52,7 @@ AI models can be developed by collecting relevant real-world data, preprocessing
 
 ## Project Workflow
 
-### Phase 1: ## Dataset & Problem Definition
+### Phase 1: Dataset & Problem Definition
 
 *About Dataset*
 
@@ -151,13 +151,21 @@ The live app is hosted on Render:
 ## Project Structure
 
 ├── heart.csv
+
 ├── app.py
+
 ├── templates/
+
 │ ├── index.html
+
 │ └── result.html
+
 ├── heart_disease_model.pkl
+
 ├── scaler.pkl
+
 ├── README.md
+
 └── requirements.txt
 
 ---
