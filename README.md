@@ -1,4 +1,5 @@
-# Design-and-Deployment-of-an-AI-Powered-Predictive-System : Heart Disease Predictor
+# Design and Deployment of an AI-Powered Predictive System : 
+## Heart Disease Predictor
 An AI-powered predictive system that helps assess the likelihood of heart disease using clinical data and a user-friendly web interface.
 
 ---
@@ -49,7 +50,9 @@ AI models can be developed by collecting relevant real-world data, preprocessing
 
 ---
 
-## Dataset & Problem Definition
+## Project Workflow
+
+### Phase 1: ## Dataset & Problem Definition
 
 *About Dataset*
 
@@ -81,37 +84,54 @@ num: the predicted attribute
 
 ---
 
-## Project Workflow
-
-### Phase 1: Problem Understanding & Dataset Exploration
-- Defined problem: binary classification — predict heart disease.
+### Phase 2: Data Exploration and Preprocessing
+- Loaded and cleaned the dataset
 - Explored data types, value ranges, and missing values.
-
-### Phase 2: Data Preprocessing
 - Feature scaling with `StandardScaler`
-- Target separation (`X`, `y`)
-- Train-test split: 80/20
 
 ### Phase 3: Model Development
-- Model: `RandomForestClassifier`
-- Evaluation: Accuracy, Precision, Recall, F1-score
-- Model saving: `.pkl` files for model and scaler using `joblib`
+- Target separation (`X`, `y`)
+- Train-test split: 80/20
+- Trained a Model: `RandomForestClassifier`
+- Evaluated using Accuracy, Precision, Recall, F1-score
+- Saved using: `.pkl` files for model and scaler using `joblib`
 
 ### Phase 4: Web App Development
 - Built with Flask
 - `index.html`: Input form
 - `result.html`: Prediction output
 - User inputs are preprocessed and passed to the model for prediction
+- Displayed prediction on a result page
 
-### 🔹 Phase 5: Deployment on Render
-- Deployed using Render’s free tier
+### Phase 5: Deployment on Render
+- Deployed the Flask App using Render’s free tier
+- Created requirements.txt and Procfile
 - Model and scaler loaded on server-side
+- Linked to GitHub for automatic deployment
 - Public URL generated for live access
 
 ---
+## How to Run Locally
+<pre>```bash
+# Clone the repo
+git clone https://github.com/yourusername/heart-disease-predictor.git
+
+# Navigate into the folder
+cd heart-disease-predictor
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python app.py
+
+# Open http://127.0.0.1:5000 in your browser
+</pre>
+---
+
 
 ## 🌐 Live App
-
+The live app is hosted on Render:
 🔗 [Access the Web App on Render](https://your-render-url.onrender.com) *(Replace with your actual Render link)*
 
 ---
@@ -128,7 +148,7 @@ num: the predicted attribute
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ├── heart.csv
 ├── app.py
@@ -142,27 +162,10 @@ num: the predicted attribute
 
 ---
 
-## ⚙️ How to Run Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/heart-disease-predictor.git
-
-# Navigate into the folder
-cd heart-disease-predictor
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python app.py
-
----
-
 ## Future Improvements
 - Expand model testing on larger datasets
-- Integrate multiple ML models and ensemble voting
-- Add patient history upload feature (CSV or Excel)
+- Integrate multiple ML models for comparison
+- Add user authentication and history tracking
 - Use Docker for more portable deployment
 
 ---
@@ -171,6 +174,8 @@ python app.py
 - Dataset from UCI via Kaggle
 - Tools from Python’s data science ecosystem
 - Deployment powered by Render
+
+---
 
 ## Author
 **Yetunde Badru**
