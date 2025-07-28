@@ -1,12 +1,16 @@
 # Design-and-Deployment-of-an-AI-Powered-Predictive-System
+
 Develop and deploy machine learning or AI-based model for a real-world application. Preprocess data, build and evaluate a predictive model, and deploy the solution using Flask so that it can be accessed via a simple web interface.
+
 -------------------------------------------------------
 Date: 13/06/2025
 --------------------------------------------------------
 ## Project Summary 
+
 The project involves developing and deploying a machine learning model to predict heart disease based on clinical data. The solution includes data preprocessing, model development, and deployment using Flask for a user-friendly web interface.
 ---------------------------------------------------------
 ## Project Question 
+
 AI models can be developed by collecting relevant real-world data, preprocessing it to ensure quality, and training a machine learning algorithm to make predictions or classifications based on the data. Once trained, the model can be evaluated using standard performance metrics. To deploy the model in a real-world application, a web framework like Flask can be used to create a user-friendly interface where inputs are collected, passed to the model, and predictions are returned in real time. This approach enhances decision-making and task automation by enabling quick, data-driven responses.
 ---------------------------------------------------------
 ## Project Objectives:
@@ -24,12 +28,15 @@ Features: age, sex, chest pain type, resting blood pressure, cholesterol, etc.
 ## STEPS:
 ### Dataset & Problem Definition
 About Dataset
+
 The World Health Organization has estimated 12 million deaths occur worldwide, every year due to heart diseases. Half the deaths in the United States and other developed countries are due to cardiovascular diseases. The early prognosis of cardiovascular diseases can aid in making decisions on lifestyle changes in high-risk patients and in turn reduce the complications. This research intends to pinpoint the most relevant/risk factors of heart disease as well as predict the overall risk using Random Forest Model.
 
 Meta-Data
+
 This is a multivariate type of dataset which means providing or involving a variety of separate mathematical or statistical variables, multivariate numerical data analysis. It is composed of 14 attributes which are age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise-induced angina, old-peak - ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment, number of major vessels and Thalassemia. This database includes 76 attributes, but all published studies relate to the use of a subset of 14 of them. The Cleveland database is the only one used by ML researchers to date. One of the major tasks on this dataset is to predict based on the given attributes of a patient whether that particular person has heart disease or not and another is the experimental task to diagnose and find out various insights from this dataset which could help in understanding the problem more.
 
 Column Descriptions:
+
 id (Unique id for each patient)
 age (Age of the patient in years)
 origin (place of study)
@@ -49,24 +56,33 @@ thal: [normal; fixed defect; reversible defect]
 num: the predicted attribute
 
 Acknowledgements
+
 Creators:
+
 Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
 University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
 University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
 V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
+
 Relevant Papers:
+
 Detrano, R., Janosi, A., Steinbrunn, W., Pfisterer, M., Schmid, J., Sandhu, S., Guppy, K., Lee, S., & Froelicher, V. (1989). International application of a new probability algorithm for the diagnosis of coronary artery disease. American Journal of Cardiology, 64,304--310.
- Web Link
+
+Web Link
+
 David W. Aha & Dennis Kibler. "Instance-based prediction of heart-disease presence with the Cleveland database." Web Link
 Gennari, J.H., Langley, P, & Fisher, D. (1989). Models of incremental concept formation. Artificial Intelligence, 40, 11--61. Web Link
 
 Citation Request:
+
 The authors of the databases have requested that any publications resulting from the use of the data include the names of the principal investigator responsible for the data collection at each institution. They would be:
 Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
 University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
 University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
 V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
+
 Dataset Detailed Summary:
+
 Source: Heart Disease UCI dataset from Kaggle.
 Target Variable: num (presence of heart disease).
 Features: Age, sex, chest pain type, resting blood pressure, cholesterol, etc.
@@ -74,10 +90,12 @@ Features: Age, sex, chest pain type, resting blood pressure, cholesterol, etc.
  ### 2. Data Preparation
 *Import all Necessary Libraries:*
 <img width="1099" height="467" alt="image" src="https://github.com/user-attachments/assets/d9df945e-c0e4-43d5-9fc9-a933c8c4d320" />
+
 -------------------------------------------------------------------------------------------------------------------
 *Data Collection from Kaggle:*
 Load the Dataset:
 <img width="1049" height="271" alt="image" src="https://github.com/user-attachments/assets/e312eefd-a2ac-436e-aea0-c022aab3d243" />
+
 --------------------------------------------------------------------------------------------------------------------------------------
 Descriptive Analysis:
 <img width="836" height="332" alt="image" src="https://github.com/user-attachments/assets/7e82610a-8ead-4abb-b9d2-df91ec3f8a3f" />
