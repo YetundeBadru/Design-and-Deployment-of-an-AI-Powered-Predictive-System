@@ -80,6 +80,7 @@ Load the Dataset:
 <img width="1049" height="271" alt="image" src="https://github.com/user-attachments/assets/e312eefd-a2ac-436e-aea0-c022aab3d243" />
 
 Descriptive Analysis:
+<img width="1081" height="338" alt="image" src="https://github.com/user-attachments/assets/d643c9fa-2822-4220-a565-672eddd60e85" />
 <img width="836" height="332" alt="image" src="https://github.com/user-attachments/assets/7e82610a-8ead-4abb-b9d2-df91ec3f8a3f" />
 <img width="938" height="454" alt="image" src="https://github.com/user-attachments/assets/0ca97b1f-8f6f-401e-a7bf-cf19147bd2b0" />
 <img width="1048" height="250" alt="image" src="https://github.com/user-attachments/assets/767b5dde-2d8a-4e70-a258-0150694770c7" />
