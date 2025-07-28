@@ -1,14 +1,11 @@
 # Design-and-Deployment-of-an-AI-Powered-Predictive-System
-
-Develop and deploy machine learning or AI-based model for a real-world application. Preprocess data, build and evaluate a predictive model, and deploy the solution using Flask so that it can be accessed via a simple web interface.
 -------------------------------------------------------
-
 *Date:* 13/06/2025
 --------------------------------------------------------
 
 ## Project Summary 
 
-The project involves developing and deploying a machine learning model to predict heart disease based on clinical data. The solution includes data preprocessing, model development, and deployment using Flask for a user-friendly web interface.
+The project involves developing and deploying a machine learning or AI-based model to predict heart disease based on clinical data. The solution includes data preprocessing, model development, and deployment using Flask so it can be accessed via a simple and user-friendly web interface.
 
 ---------------------------------------------------------
 
@@ -110,30 +107,30 @@ V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano,
 
 *Observations:*
 
-There are no heart diseases found in the 25% of the patients with an average of age 47.0.
-There is mild presence of heart diseases found in the 50% of the patients with an average of age 54.0.
-There is moderate presence of heart diseases found in 75% of the patients with an average of age 60.0 or more.
+1. There are no heart diseases found in the 25% of the patients with an average of age 47.0.
+2. There is mild presence of heart diseases found in the 50% of the patients with an average of age 54.0.
+3. There is moderate presence of heart diseases found in 75% of the patients with an average of age 60.0 or more.
 
 <img width="938" height="454" alt="image" src="https://github.com/user-attachments/assets/0ca97b1f-8f6f-401e-a7bf-cf19147bd2b0" />
 
 *Observations:*
 
-There are 920 rows, which means the data of 920 human beings.
-There are 16 columns in the dataset, including id, dataset (location of the patient).
-The target feature num represents the ordinal numeric severity of the heart disease ([0, 1, 2, 3, 4]).
-There are 13 features or medical parameters (excluding id and dataset), which will be used to predict the target feature num (the intensity of the heart disease).
+1. There are 920 rows, which means the data of 920 human beings.
+2. There are 16 columns in the dataset, including id, dataset (location of the patient).
+3. The target feature num represents the ordinal numeric severity of the heart disease ([0, 1, 2, 3, 4]).
+4. There are 13 features or medical parameters (excluding id and dataset), which will be used to predict the target feature num (the intensity of the heart disease).
 
 <img width="1048" height="250" alt="image" src="https://github.com/user-attachments/assets/767b5dde-2d8a-4e70-a258-0150694770c7" />
 
 *Observation:*
 
-Number of rows in the dataset:  920
-Number of columns in the dataset:  16
+1. Number of rows in the dataset:  920
+2. Number of columns in the dataset:  16
 
 <img width="889" height="84" alt="image" src="https://github.com/user-attachments/assets/e8ff4de6-0a9a-4278-a6dc-ea7271ea1359" />
 
 *Observation:*
-The columns in the Dataset:
+1. The columns in the Dataset:
 
 <img width="1053" height="355" alt="image" src="https://github.com/user-attachments/assets/ed36c2ad-96e6-4bc3-aaf2-494b96cfc2b7" />
 
@@ -141,7 +138,7 @@ The columns in the Dataset:
 <img width="1030" height="99" alt="image" src="https://github.com/user-attachments/assets/404e84db-44f9-42e4-80e8-bb0dd8fba6e2" />
 
 *Observation:*
-There is no duplicated entry in the Dataset
+1. There is no duplicated entry in the Dataset
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -154,9 +151,19 @@ There is no duplicated entry in the Dataset
 
 <img width="1033" height="223" alt="image" src="https://github.com/user-attachments/assets/b30128b6-47a8-4d9b-95d3-8bc72df2d76a" />
 
-
 <img width="1048" height="506" alt="image" src="https://github.com/user-attachments/assets/aebaf56b-ea4d-4742-a39a-7571ebfb11b5" />
 
+<img width="1066" height="546" alt="image" src="https://github.com/user-attachments/assets/0cfa5b04-d8a9-43b5-90b3-3ef88ac79727" />
+
+<img width="970" height="143" alt="image" src="https://github.com/user-attachments/assets/3ad25614-aec8-487d-8795-a23d921dec24" />
+
+*Age*
+1. The minimum age to have a heart disease starts from 28 years old.
+2. Most of the people get heart disease at the age of 53-54 years.
+3. Most of the males and females get are with heart disease at the age of 54-55 years.
+4. Male percentage in the data: 78.91%
+5. Female Percentage in the data: 21.09%
+6. Males are 274.23% more than females in the data.
 
 
 
