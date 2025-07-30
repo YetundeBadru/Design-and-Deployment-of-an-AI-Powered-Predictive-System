@@ -1,12 +1,12 @@
 services:
   - type: web
-    name: heart-disease-predictor
+    name: heart-disease-app
     env: python
     repo: https://github.com/YetundeBadru/Design-and-Deployment-of-an-AI-Powered-Predictive-System
     branch: main
-    buildCommand: pip install -r requirements.txt
+    buildCommand: ./build.sh
     startCommand: gunicorn app:app
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.10
-    autoDeploy: true
+    region: frankfurt
+    plan: free
+    runtime: python
+    pythonVersion: 3.10.14
