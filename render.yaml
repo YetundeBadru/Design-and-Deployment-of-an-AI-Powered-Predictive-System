@@ -9,4 +9,6 @@ services:
     region: frankfurt
     plan: free
     runtime: python
-    pythonVersion: 3.10.14
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.14
