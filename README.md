@@ -1,5 +1,5 @@
 # Design and Deployment of an AI-Powered Predictive System : 
-## Heart Disease Predictor
+### Heart Disease Predictor
 An AI-powered predictive system that helps assess the likelihood of heart disease using clinical data and a user-friendly web interface.
 
 ---
@@ -10,13 +10,10 @@ An AI-powered predictive system that helps assess the likelihood of heart diseas
 ![Deployment](https://img.shields.io/badge/Render-Deployment-success?style=for-the-badge)
 
 ---
+
 ## Project Summary 
 
 The project involves developing and deploying a machine learning or AI-based model to predict heart disease based on clinical data. The solution includes data preprocessing, model development, and deployment using Flask so it can be accessed via a simple and user-friendly web interface.
-
----
-
-## Project Question 
 
 AI models can be developed by collecting relevant real-world data, preprocessing it to ensure quality, and training a machine learning algorithm to make predictions or classifications based on the data. Once trained, the model can be evaluated using standard performance metrics. To deploy the model in a real-world application, a web framework like Flask can be used to create a user-friendly interface where inputs are collected, passed to the model, and predictions are returned in real time. This approach enhances decision-making and task automation by enabling quick, data-driven responses.
 
@@ -64,23 +61,22 @@ This is a multivariate type of dataset which means providing or involving a vari
 
 *Column Descriptions:*
 
-id (Unique id for each patient)
-age (Age of the patient in years)
-origin (place of study)
-sex (Male/Female)
-cp chest pain type ([typical angina, atypical angina, non-anginal, asymptomatic])
-trestbps resting blood pressure (resting blood pressure (in mm Hg on admission to the hospital))
-chol (serum cholesterol in mg/dl)
-fbs (if fasting blood sugar > 120 mg/dl)
-restecg (resting electrocardiographic results)
- -- Values: [normal, stt abnormality, lv hypertrophy]
-thalach: maximum heart rate achieved
-exang: exercise-induced angina (True/ False)
-oldpeak: ST depression induced by exercise relative to rest
-slope: the slope of the peak exercise ST segment
-ca: number of major vessels (0-3) colored by fluoroscopy
-thal: [normal; fixed defect; reversible defect]
-num: the predicted attribute
+- id (Unique id for each patient)
+- age (Age of the patient in years)
+- origin (place of study)
+- sex (Male/Female)
+- cp chest pain type ([typical angina, atypical angina, non-anginal, asymptomatic])
+- trestbps resting blood pressure (resting blood pressure (in mm Hg on admission to the hospital))
+- chol (serum cholesterol in mg/dl)
+- fbs (if fasting blood sugar > 120 mg/dl)
+- restecg (resting electrocardiographic results) Values: [normal, stt abnormality, lv hypertrophy]
+- thalach: maximum heart rate achieved
+- exang: exercise-induced angina (True/ False)
+- oldpeak: ST depression induced by exercise relative to rest
+- slope: the slope of the peak exercise ST segment
+- ca: number of major vessels (0-3) colored by fluoroscopy
+- thal: [normal; fixed defect; reversible defect]
+- num: the predicted attribute
 
 ---
 
@@ -104,11 +100,13 @@ num: the predicted attribute
 - Displayed prediction on a result page
 
 ### Phase 5: Deployment on Render
-- Deployed the Flask App using Render’s free tier
-- Created requirements.txt and Procfile
-- Model and scaler loaded on server-side
-- Linked to GitHub for automatic deployment
-- Public URL generated for live access
+- Deployed the Flask-based heart disease prediction app using Render’s Blueprint instance
+- Created and configured a render.yaml file for infrastructure-as-code deployment
+- Defined buildCommand and startCommand for clean automated builds
+- Added requirements.txt to install dependencies and ensured .pkl files (model + scaler) were available
+- HTML templates (index.html, result.html) served via Flask’s templates directory
+- Connected the GitHub repo for automatic deployment on new commits
+- Successfully deployed to a public Render URL with live prediction functionality
 
 ---
 ## How to Run Locally
@@ -132,7 +130,7 @@ python app.py
 
 ## 🌐 Live App
 The live app is hosted on Render:
-🔗 [Access the Web App on Render](https://your-render-url.onrender.com) *(Replace with your actual Render link)*
+🔗 [Access the Web App on Render](https://heart-disease-app-sxju.onrender.com)
 
 ---
 
@@ -140,33 +138,32 @@ The live app is hosted on Render:
 
 **Homepage**
 
-![Input](https://via.placeholder.com/800x400?text=Input+Form+Screenshot)
+![Input](<img width="958" height="682" alt="image" src="https://github.com/user-attachments/assets/362ee216-35b2-4ee7-9f92-1f8bb1ace36b" />)
+
+
 
 **Prediction Result**
 
-![Output](https://via.placeholder.com/800x400?text=Prediction+Output+Screenshot)
+![Output](<img width="1147" height="658" alt="image" src="https://github.com/user-attachments/assets/9d51af4e-50e2-4fcc-a948-dc8b41635f1d" />)
 
 ---
 
 ## Project Structure
 
-├── heart.csv
+heart-disease-prediction-app/
+│
+├── app.py                      # Main Flask app
+├── heart_disease_model.pkl     # Trained ML model
+├── scaler.pkl                  # Scaler used during model training
+├── requirements.txt            # Python dependencies
+├── render.yaml                 # Render deployment configuration
+│
+├── templates/                  # HTML files for UI
+│   ├── index.html              # Form for input
+│   └── result.html             # Output prediction
+│
+└── README.md                   # Project documentation
 
-├── app.py
-
-├── templates/
-
-│ ├── index.html
-
-│ └── result.html
-
-├── heart_disease_model.pkl
-
-├── scaler.pkl
-
-├── README.md
-
-└── requirements.txt
 
 ---
 
@@ -187,5 +184,7 @@ The live app is hosted on Render:
 
 ## Author
 **Yetunde Badru**
-Data Scientist | AI/ML Engineer | Cloud Practitioner
-LinkedIn
+Data Scientist | AI/ML| AWS Cloud Practitioner
+
+**LinkedIn**: www.linkedin.com/in/yetundebarakbadru
+
