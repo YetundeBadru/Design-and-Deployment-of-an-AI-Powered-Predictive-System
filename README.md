@@ -3,8 +3,11 @@
 An AI-powered predictive system that helps assess the likelihood of heart disease using clinical data and a user-friendly web interface.
 
 ---
+
 *Date:* 13/06/2025
+
 ---
+
 ![Heart](https://img.shields.io/badge/ML-Predictive_Model-green?style=for-the-badge)  
 ![Flask](https://img.shields.io/badge/Flask-Deployed-blue?style=for-the-badge)  
 ![Deployment](https://img.shields.io/badge/Render-Deployment-success?style=for-the-badge)
@@ -163,7 +166,6 @@ heart-disease-prediction-app/
 │   └── result.html             # Output prediction
 │
 └── README.md                   # Project documentation
-
 
 ---
 
