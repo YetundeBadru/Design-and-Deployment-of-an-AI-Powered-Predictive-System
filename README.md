@@ -142,9 +142,7 @@ The live app is hosted on Render:
 **Homepage**
 
 <img width="958" height="682" alt="image" src="https://github.com/user-attachments/assets/362ee216-35b2-4ee7-9f92-1f8bb1ace36b" />
-
-
-
+---------------------
 **Prediction Result**
 
 <img width="1147" height="658" alt="image" src="https://github.com/user-attachments/assets/9d51af4e-50e2-4fcc-a948-dc8b41635f1d" />
@@ -157,27 +155,27 @@ heart-disease-prediction-app/
 
 │
 
-├── app.py                      # Main Flask app
+├── app.py                      
 
-├── heart_disease_model.pkl     # Trained ML model
+├── heart_disease_model.pkl    
 
-├── scaler.pkl                  # Scaler used during model training
+├── scaler.pkl                
 
-├── requirements.txt            # Python dependencies
+├── requirements.txt          
 
-├── render.yaml                 # Render deployment configuration
-
-│
-
-├── templates/                  # HTML files for UI
-
-│   ├── index.html              # Form for input
-
-│   └── result.html             # Output prediction
+├── render.yaml               
 
 │
 
-└── README.md                   # Project documentation
+├── templates/               
+
+│   ├── index.html          
+
+│   └── result.html          
+
+│
+
+└── README.md                
 
 ---
 
