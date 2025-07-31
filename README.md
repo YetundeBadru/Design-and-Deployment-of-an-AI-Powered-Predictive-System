@@ -142,7 +142,9 @@ The live app is hosted on Render:
 **Homepage**
 
 <img width="958" height="682" alt="image" src="https://github.com/user-attachments/assets/362ee216-35b2-4ee7-9f92-1f8bb1ace36b" />
----------------------
+
+---
+
 **Prediction Result**
 
 <img width="1147" height="658" alt="image" src="https://github.com/user-attachments/assets/9d51af4e-50e2-4fcc-a948-dc8b41635f1d" />
