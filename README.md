@@ -196,9 +196,16 @@ heart-disease-prediction-app/
 
 ---
 
+## Contributing
+Feel free to fork this repository, contribute, and suggest improvements.
+
+---
+
 ## Author
 **Yetunde Badru**
 Data Scientist | AI/ML| AWS Cloud Practitioner
 
 **LinkedIn**: www.linkedin.com/in/yetundebarakbadru
+**Email:** yetundebarakbadru@gmail.com
+
 
