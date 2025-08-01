@@ -206,6 +206,7 @@ Feel free to fork this repository, contribute, and suggest improvements.
 Data Scientist | AI/ML| AWS Cloud Practitioner
 
 **LinkedIn**: www.linkedin.com/in/yetundebarakbadru
+
 **Email:** yetundebarakbadru@gmail.com
 
 
