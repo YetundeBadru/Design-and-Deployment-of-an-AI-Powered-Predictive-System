@@ -189,6 +189,13 @@ heart-disease-prediction-app/
 
 ---
 
+Documentation
+Full project documentation with background, objectives, methods, results, and discussion is available within the notebook and linked below:
+
+🔗 [Project Documentation](https://docs.google.com/document/d/1gXhbhJin4VRKeuCtvIuj386eWWgKeSEON3u1QOSRnac/edit?usp=sharing)
+
+---
+
 ## Acknowledgments
 - Dataset from UCI via Kaggle
 - Tools from Python’s data science ecosystem
@@ -203,7 +210,7 @@ Feel free to fork this repository, contribute, and suggest improvements.
 
 ## Author
 **Yetunde Badru**
-Data Scientist | AI/ML| AWS Cloud Practitioner
+Data Scientist | AI/ML | AWS Cloud Practitioner
 
 **LinkedIn**: www.linkedin.com/in/yetundebarakbadru
 
