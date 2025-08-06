@@ -189,7 +189,7 @@ heart-disease-prediction-app/
 
 ---
 
-Documentation
+## Documentation
 Full project documentation with background, objectives, methods, results, and discussion is available within the notebook and linked below:
 
 🔗 [Project Documentation](https://docs.google.com/document/d/1gXhbhJin4VRKeuCtvIuj386eWWgKeSEON3u1QOSRnac/edit?usp=sharing)
