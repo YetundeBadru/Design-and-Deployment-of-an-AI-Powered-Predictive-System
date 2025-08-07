@@ -1,4 +1,4 @@
-# Design and Deployment of an AI-Powered Predictive System : 
+# Design and Deployment of a Predictive System : 
 ### Heart Disease Predictor
 An AI-powered predictive system that helps assess the likelihood of heart disease using clinical data and a user-friendly web interface.
 
